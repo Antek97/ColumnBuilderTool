@@ -28,28 +28,28 @@ It's recommended to avoid spawning poles at runtime due to potential compatibili
 
 # Settings in DataAsset
 
-PillarSettings:
-
+PillarSettings: 
+{
       PillarActorClass          –   The blueprint must inherit from BP_ElectricPillar.
       bSnapToGround             –   Determines if the pillar should align with the ground.
       bGenerateVertical         –   If enabled, poles will be generated vertically.
       bSupportsWorldPartition   –   When enabled, long splines will be split into smaller segments for better compatibility with World Partition.
-
+}
 WireSettings:
-
+{
       WireStaticMesh            –   The static mesh used for the cable appearance.
       DeflectionWireValue       –   Controls the sagging of the cable between poles. It's calculated only once and clamped (max 1000.f) to avoid excessive bending.
-
+}
 Settings:
-
+{
       PillarDistance            –   Minimum allowed distance between poles (cannot be less than 500) to prevent issues like freezing the editor.
-
+}
 # Tool Actions
 
 Spline Actions:
-
+{
       GeneratePowerLine         –   Creates poles and cables.
       RemovePowerLines          –   Removes the poles and cables, but keeps the spline.
       Remove                    –   Removes the entire spline along with its poles.
-
+}
       
