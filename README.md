@@ -4,7 +4,7 @@
 
 This tool is a useful asset for creating power lines (and more) in open-world games. It is supported by World Partition and is designed for level designers to easily place poles and similar structures. 
 
-> [!NOTE]
+> [!IMPORTANT]
 It's recommended to avoid spawning poles at runtime due to potential compatibility issues with World Partition.
 
 ## Creation:
