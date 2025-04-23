@@ -23,19 +23,26 @@ It's recommended to avoid spawning poles at runtime due to potential compatibili
 ## Usage:
 
   -> Place the `BP_PillarPoint_Child` into the level.
+  
   -> Set up the spline and configure the tool's options.
+  
   -> Select the root of the `BP_PillarPoint_Child` in the level, go to the Details panel, and click `GeneratePowerLine` to create the power lines.
+  
   -> To remove them, use `RemovePowerLines`.
+  
   -> If you update the `DA_PowerLine_Child`, you must regenerate the `BP_ElectricalPillar_Child`. You can do this simply by clicking `GeneratePowerLine` again to refresh the blueprint in the level.
 
 ## Settings in DataAsset
 
 ### PillarSettings: 
 
-* PillarActorClass          –   The blueprint must inherit from BP_ElectricPillar.
-* bSnapToGround             –   Determines if the pillar should align with the ground.
-* bGenerateVertical         –   If enabled, poles will be generated vertically.
-* bSupportsWorldPartition   –   When enabled, long splines will be split into smaller segments for better compatibility with World Partition.
+PillarActorClass          –   The blueprint must inherit from BP_ElectricPillar.
+
+bSnapToGround             –   Determines if the pillar should align with the ground.
+
+bGenerateVertical         –   If enabled, poles will be generated vertically.
+
+bSupportsWorldPartition   –   When enabled, long splines will be split into smaller segments for better compatibility with World Partition.
 
 ### WireSettings:
 
@@ -51,8 +58,10 @@ PillarDistance            –   Minimum allowed distance between poles (cannot b
 
 ### Spline Actions:
 
-      GeneratePowerLine         –   Creates poles and cables.
-      RemovePowerLines          –   Removes the poles and cables, but keeps the spline.
-      Remove                    –   Removes the entire spline along with its poles.
+GeneratePowerLine         –   Creates poles and cables.
+
+RemovePowerLines          –   Removes the poles and cables, but keeps the spline.
+
+Remove                    –   Removes the entire spline along with its poles.
 
       
