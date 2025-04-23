@@ -2,8 +2,9 @@
 
 ## Description:
 
-This tool is a useful asset for creating power lines (and more) in open-world games.
-> [!NOTE] It is supported by World Partition and is designed for level designers to easily place poles and similar structures. 
+This tool is a useful asset for creating power lines (and more) in open-world games. It is supported by World Partition and is designed for level designers to easily place poles and similar structures. 
+
+> [!NOTE]
 It's recommended to avoid spawning poles at runtime due to potential compatibility issues with World Partition.
 
 ## Creation:
@@ -38,12 +39,13 @@ It's recommended to avoid spawning poles at runtime due to potential compatibili
 
 ### WireSettings:
 
-      WireStaticMesh            –   The static mesh used for the cable appearance.
-      DeflectionWireValue       –   Controls the sagging of the cable between poles. It's calculated only once and clamped (max 1000.f) to avoid excessive bending.
+WireStaticMesh            –   The static mesh used for the cable appearance.
+      
+DeflectionWireValue       –   Controls the sagging of the cable between poles. It's calculated only once and clamped (max 1000.f) to avoid excessive bending.
 
 ### Settings:
 
-      PillarDistance            –   Minimum allowed distance between poles (cannot be less than 500) to prevent issues like freezing the editor.
+PillarDistance            –   Minimum allowed distance between poles (cannot be less than 500) to prevent issues like freezing the editor.
 
 ## Tool Actions
 
