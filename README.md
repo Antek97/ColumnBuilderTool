@@ -48,8 +48,8 @@ Settings:
 
 Spline Actions:
 
-GeneratePowerLine         –   Creates poles and cables.
-RemovePowerLines          –   Removes the poles and cables, but keeps the spline.
-Remove                    –   Removes the entire spline along with its poles.
+      GeneratePowerLine         –   Creates poles and cables.
+      RemovePowerLines          –   Removes the poles and cables, but keeps the spline.
+      Remove                    –   Removes the entire spline along with its poles.
 
       
