@@ -1,11 +1,13 @@
 # Column Builder Unreal Engine 5.4.4
 
+
 ## Description:
 
 This tool is a useful asset for creating power lines (and more) in open-world games. It is supported by World Partition and is designed for level designers to easily place poles and similar structures. 
 
 > [!IMPORTANT]
 It's recommended to avoid spawning poles at runtime due to potential compatibility issues with World Partition.
+
 
 ## Creation:
 
@@ -20,6 +22,7 @@ It's recommended to avoid spawning poles at runtime due to potential compatibili
 3. Create a `BP_PillarPoint_Child` that inherits from `BP_PillarPoint`.
     - In its `PowerLineSettings` slot, set the previously created `DA_PowerLine_Child`.
 
+
 ## Usage:
 
   -> Place the `BP_PillarPoint_Child` into the level.
@@ -31,6 +34,7 @@ It's recommended to avoid spawning poles at runtime due to potential compatibili
   -> To remove them, use `RemovePowerLines`.
   
   -> If you update the `DA_PowerLine_Child`, you must regenerate the `BP_ElectricalPillar_Child`. You can do this simply by clicking `GeneratePowerLine` again to refresh the blueprint in the level.
+
 
 ## Settings in DataAsset
 
@@ -54,7 +58,9 @@ DeflectionWireValue       –   Controls the sagging of the cable between poles.
 
 PillarDistance            –   Minimum allowed distance between poles (cannot be less than 500) to prevent issues like freezing the editor.
 
+
 ## Tool Actions
+
 
 ### Spline Actions:
 
