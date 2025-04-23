@@ -8,15 +8,15 @@ It's recommended to avoid spawning poles at runtime due to potential compatibili
 # Creation:
 
 1. To correctly use the tool for creating poles with cables:
-  - Create a BP_ElectricalPillar_Child blueprint that inherits from BP_ElectricalPillar.
-  - In the parent blueprint, add a PoleStaticMesh component and place a BP_PillarPoint component where the cables should connect.
-  - Assign the necessary mesh.
+    - Create a BP_ElectricalPillar_Child blueprint that inherits from BP_ElectricalPillar.
+    - In the parent blueprint, add a PoleStaticMesh component and place a BP_PillarPoint component where the cables should connect.
+    - Assign the necessary mesh.
 
 2. Create a DA_PowerLine_Child data asset that inherits from PowerLineDataAsset.
-  - In the PillarActorClass field, assign your BP_ElectricalPillar_Child and configure the remaining options.
+    - In the PillarActorClass field, assign your BP_ElectricalPillar_Child and configure the remaining options.
 
 3. Create a BP_PillarPoint_Child that inherits from BP_PillarPoint.
-  - In its PowerLineSettings slot, set the previously created DA_PowerLine_Child.
+    - In its PowerLineSettings slot, set the previously created DA_PowerLine_Child.
 
 # Usage:
 
